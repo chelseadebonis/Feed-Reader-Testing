@@ -113,12 +113,11 @@ describe('New Feed Selection', function() {
            //first feed
                loadFeed(0, function() {
                  oldFeed = $('.feed').html();
-                 done();
-               });
-            // now first call is made you can make second call
+            // now first call is made you can make second call  
                loadFeed(1, function() {
                  newFeed = $('.feed').html();
                  done();
+               });
                });
              });
 
